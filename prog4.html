@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+            background-color: rgb(141, 224, 181);
+            font-family: Arial;
+        }
+        h1{
+            color:rgb(156, 155, 226);
+            font-size:40px;
+            text-align: center;
+        }
+        table{
+            margin:auto;
+            background:rgb(1, 150, 180);
+            padding:20px;
+        }
+        td{
+            padding:10px;
+            color:rgb(159, 248, 195);
+            font-size:16px;
+        }
+        input,select,textarea{
+            background:rgb(228, 158, 16);
+            padding:5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <marquee width="60%" direction="left" height="100px">
+        Please enter your details
+    </marquee>
+<form>
+        <table>
+            <tr><td>Name:</td>
+            <td><input type="text"></td></tr>
+            <tr><td>Email:</td>
+            <td><input type="password"></td></tr>
+            <tr><td>Gender</td>
+            <td>
+                <input type="radio" name="g">
+                Male
+                <input type="radio" name="g">
+                Female
+            </td></tr>
+            <tr><td>Course:</td>
+            <td>
+                <select>
+                    <option>CSE</option>
+                    <option>ISE</option>
+                    <option>AIML</option>
+                    <option>IOT</option>
+                    <option>CYB</option>
+                    
+                </select>
+            </td></tr>
+            <tr><td>Skill:</td>
+            <td>
+                <input type="checkbox">HTML
+                <input type="checkbox">CSS
+
+            </td></tr>
+            <tr><td>Address</td>
+            <td><textarea></textarea></td></tr>
+            <tr><td colspan="2" align="center">
+                <input type="submit" value="Register">
+                <input type="reset" value="clear">
+            </td></tr>
+        </table>
+    </form>
+</body>
+</html>

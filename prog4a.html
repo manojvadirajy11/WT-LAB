@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            background: #f0ebf8;
+            font-family: Arial;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a356b;
+        }
+
+        table {
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            border-top: 8px solid #673ab7;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        td {
+            padding: 10px;
+            color: #333;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        input[type="text"], input[type="email"],
+        input[type="tel"], select, textarea {
+            width: 90%;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            accent-color: #673ab7;
+        }
+
+        input[type="submit"] {
+            background: #673ab7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background: #eee;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #512da8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <marquee width="60%" direction="left" height="100px">
+        Please enter your details
+    </marquee>
+    <form onclear="return ">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h2>Student Registration</h2>
+                    Please enter your details below.
+                </td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" placeholder="Enter your name"
+                    required>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" placeholder="Enter your email"
+                    required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone:</td>
+                <td>
+                    <input type="tel" placeholder="Enter your phone number"
+                    pattern="[0-9]" maxlength="10" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender"
+                    value="Male" required> Male
+                    <input type="radio" name="gender"
+                    value="Female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select required>
+                        <option value="">Choose course</option>
+                        <option>CSE</option>
+                        <option>ISE</option>
+                        <option>AIML</option>
+                        <option>IOT</option>
+                        <option>CYB</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Skills:</td>
+                <td>
+                    <input type="checkbox" name="skill" value="HTML"> HTML<br>
+                    <input type="checkbox" name="skill" value="CSS"> CSS<br>
+                    <input type="checkbox" name="skill" value="JavaScript"> JavaScript<br>
+                    <input type="checkbox" name="skill" value="React"> React<br>
+                    <input type="checkbox" name="skill" value="NodeJS"> NodeJS<br>
+                    <input type="checkbox" name="skill" value="TypeScript"> TypeScript
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <textarea rows="3"
+                    placeholder="Enter your address"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
